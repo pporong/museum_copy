@@ -224,11 +224,11 @@ body {
 .main-visual >.slider-btn-box {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 16px;
   transform: translateY(-50%);
 }
 .main-visual >.prev-box {
-  left: 0;
+  left: 16px;
 }
 .main-visual >.slider-btn-box >.next-btn {
   background-image: url(../img/main_visual_next.png);
@@ -285,6 +285,12 @@ body {
 .main-visual >.slider-dots-box .control-btn-box {
   position: relative;
 }
+.main-visual >.slider-dots-box .control-btn-box > div{
+  display: none;
+}
+.main-visual >.slider-dots-box .control-btn-box > div.active{
+  display: block;
+}
 .main-visual >.slider-dots-box .control-btn-box >.play{
   background-image: url(../img/main_btn_play.png);
   width: 38px;
@@ -301,3 +307,5 @@ body {
 .main-visual >.slider-dots-box .control-btn-box >.pause{
 
 }
+
+/* pause 버튼 만들고 active 왔다갔다하게 만들깅  */

@@ -16,5 +16,19 @@ $(document).ready(function(){
     $('.all-wrap >.main-visual .slider-btn-box >.next-btn').click(function(){
         $('.main-slider').slick('slickNext')
     });
+
+    $('.slider-dots-box >.slider-dots >.dots').click(function(){
+
+        var num = $(this).index()
+
+
+        $('.all-wrap >.main-visual >.main-slider').slick('slickGoTo', num)
+
+    })
     
+    $('.play').click(function(){
+        $('.all-wrap >.main-visual >.main-slider').slick("slickPlay")
+    })
+
+
 });
