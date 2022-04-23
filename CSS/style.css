@@ -630,21 +630,150 @@ body {
   padding-bottom: 15px;
   text-align: center;
 
+  /* border-bottom: 4px solid #222;
+  font-weight: bold;
+  color: #222; */
+}
+.section03 >.notice-area >.notice-tab >.tab-box >.tab-btn.active {
   border-bottom: 4px solid #222;
-  /* font-weight: bold; */
-  /* color: #222; */
+  font-weight: bold;
+  color: #222;
 }
+.section03 >.notice-area >.notice-tab >.tab-box >.more-btn {
+}
+.section03 >.notice-area >.notice-tab >.tab-box >.more-btn i{
+  width: 28px;
+  height: 28px;
+  background-image: url(../IMG/btn_main_on.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
 /* ----------- 탭메뉴 : 내용 --------- */
-.section03 >.notice-area >.tab-content {
+.section03 >.notice-area >.notice-tab >.tab-content {
 
 }
-.section03 >.notice-area >.tab-content >.content {
-  
+.section03 >.notice-area >.notice-tab >.tab-content >.content {
+  display: none;
+}
+.section03 >.notice-area >.notice-tab >.tab-content >.content.active {
+  display: block;
 }
 
+.section03 >.notice-area >.notice-tab >.tab-content >.content > ul {
+  padding-bottom: 35px;
+  border-bottom: 1px solid #000;
+}
+.section03 >.notice-area >.notice-tab >.tab-content >.content > ul > li {
+  display: block;
+  font-size: 0;
+  padding-left: 10px;
+  margin-top: 32px;
+  box-sizing: border-box;
+}
+.section03 >.notice-area >.notice-tab >.tab-content >.content > ul >li >.tab {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 95px);
+  padding-left: 23px;
+  position: relative;
+  box-sizing: border-box;
+}
+.section03 >.notice-area >.notice-tab >.tab-content >.content > ul >li >.tab::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #222;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.section03 >.notice-area >.notice-tab >.tab-content >.content > ul > li >.tab > a {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  max-width: calc(100% - 10px);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.section03 >.notice-area >.notice-tab >.tab-content >.content > ul > li:hover >.tab > a {
+  text-decoration: underline;
+}
+.section03 >.notice-area >.notice-tab >.tab-content >.content > ul > li > span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 95px;
+  text-align: right;
+  font-size: 18px;
+  color: #7c7c7c;
+}
 
-
-
+/* ------------------섹션 3 / 슬라이드 ------------------------- */
 .section03 >.notice-area .notice-slider {
   width: calc(50% - 1.8%);
+  position: relative;
+}
+.section03 >.notice-area .notice-slider >.n-slide {
+  width: 100%;
+}
+.section03 >.notice-area .notice-slider >.n-slide .content {
+
+}
+.section03 >.notice-area .notice-slider >.n-slide .content > a {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 62.680%;
+}
+.section03 >.notice-area .notice-slider >.n-slide .content01 > a {
+  background-image: url(../IMG/section3-1_r.jpg);
+} 
+.section03 >.notice-area .notice-slider >.n-slide .content02 > a {
+  background-image: url(../IMG/section3-2_r.jpg);
+}
+
+/* ----------------슬라이드 닷츠 -------------- */
+.section03 >.notice-area .notice-slider >.slider-dots-box {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 100%;
+  height: 38px;
+  text-align: right;
+}
+.section03 >.notice-area .notice-slider >.slider-dots-box >.slider-dots {
+
+}
+.section03 >.notice-area .notice-slider >.slider-dots-box >.slider-dots >.dots {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 1;
+  margin: 0 6px;
+  vertical-align: bottom;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  display: inline-block;
+}
+.section03 >.notice-area .notice-slider >.slider-dots-box >.slider-dots >.dots.active {
+  background-color: #3f0b9f;
+  border: 1px solid #3f0b9f;
+}
+
+/* ------------ 슬라이드 버튼 ------------- */
+.section03 >.notice-area .notice-slider >.slider-dots-box >.slider-dots >.control-btn-box {
+
+}
+.section03 >.notice-area .notice-slider >.slider-dots-box >.slider-dots >.control-btn-box >.play {
+
+}
+.section03 >.notice-area .notice-slider >.slider-dots-box >.slider-dots >.control-btn-box >.pause {
+
 }
